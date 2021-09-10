@@ -39,6 +39,8 @@ nav{
     text-align: center;
 }
 
+/*ITIS 3135 Activty 2 css */
+
 table {
     border-collapse: collapse;
     margin: 20px;
@@ -72,6 +74,21 @@ tbody tr:nth-child(even) td {
     background-color: lawngreen;
 }
 
-#department{
-    background-color: lightgreen;
+/*ITIS 3135 Activity 3 css */
+/* All of the following CSS is based off w3schools.com/css/css_form.asp */
+input[type=submit]{
+    background-color: darkslateblue;
+    color: lightgray;
+}
+
+input[type=text], input[type=tel], input[type=email], input[placeholder]{
+    background-color: lightgray;
+    color: darkslateblue;
+    font-family: 'Helvetica';
+    margin: 8px 0;
+} 
+
+select{
+    background-color: lightgray;
+    color: darkslateblue;
 }
