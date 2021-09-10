@@ -38,3 +38,36 @@ figcaption{
 nav{
     text-align: center;
 }
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+thead {
+    background-color: green;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: .2em 1em .2em .5em;
+    text-align: left;
+    vertical-align: middle;
+    color: black;
+}
+
+.thead{
+    background-color: green;
+}
+
+.right {
+    text-align: right;
+}
+
+tbody tr:nth-child(odd) td {
+    background-color: lightgreen;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: lawngreen;
+}
