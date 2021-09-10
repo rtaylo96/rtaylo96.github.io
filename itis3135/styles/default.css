@@ -71,3 +71,7 @@ tbody tr:nth-child(odd) td {
 tbody tr:nth-child(even) td {
     background-color: lawngreen;
 }
+
+#department{
+    background-color: lightgreen;
+}
