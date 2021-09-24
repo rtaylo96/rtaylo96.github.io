@@ -92,3 +92,16 @@ select{
     background-color: lightgray;
     color: darkslateblue;
 }
+
+/* ITIS 3135 Activity 5 css */
+.button {
+    background-color: lightslategray;
+    color: darkslateblue;
+    border-color: darkslateblue;
+    text-align: center;
+    font-family:'Verdana';
+}
+
+div{
+    text-align: center;
+}
