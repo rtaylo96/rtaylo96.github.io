@@ -47,7 +47,7 @@ table {
 }
 
 thead {
-    background-color: green;
+    background-color: darkslategray;
 }
 
 th, td {
@@ -59,7 +59,7 @@ th, td {
 }
 
 .thead{
-    background-color: green;
+    background-color: darkslategray;
 }
 
 .right {
@@ -67,11 +67,11 @@ th, td {
 }
 
 tbody tr:nth-child(odd) td {
-    background-color: lightgreen;
+    background-color: darkgray;
 }
 
 tbody tr:nth-child(even) td {
-    background-color: lawngreen;
+    background-color: gray;
 }
 
 /*ITIS 3135 Activity 3 css */
