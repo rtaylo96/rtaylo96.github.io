@@ -102,6 +102,12 @@ select{
     font-family:'Verdana';
 }
 
-div{
+/* ITIS 3135 Activity 7 */
+button{
+    background-color: lightgray;
+    color: darkslateblue;
+    border-color: lightslategray;
     text-align: center;
+    border-width: 2.5px;
+    padding: 5px, 2.5px;
 }
