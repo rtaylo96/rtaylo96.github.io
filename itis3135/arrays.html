@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <script src="./scripts/arrays.js"></script>
         <script src="./scripts/alert.js" ></script>
-        <script src="./scripts/default.js"></script>
-        <title>Rachel Taylor >> ITIS 3135 >> First Scripts</title>
+        <title>Rachel Taylor >> ITIS 3135 >> Arrays</title>
     </head>
     <body>
         <header>
-            <h1>Rachel Taylor >> ITIS 3135 >> First Scripts</h1>
+            <h1>Rachel Taylor >> ITIS 3135 >> Arrays</h1>
         </header>
         <nav>
             <a href="index.html">Index</a>
@@ -33,32 +33,29 @@
             <a href="arrays.html">Arrays</a>
         </nav>
         <main>
-            <h2>First Scripts</h2>
-                <h3>Want to see something cool? Press the button below!</h3>
-                    <button onclick="userInformation()" class="button">Press me!</button>
+            <h2>Arrays</h2>
+                <form id="form1">
+                    <label for="employee_name">Choose an Employee:</label>
+                        <select id="employee_name" name="employee_name">
+                            <option value="tony_stark">Tony Stark</option>
+                            <option value="steve_rodgers">Steve Rodgers</option>
+                            <option value="chris_hemsworth">Chris Hemsworth</option>
+                            <option value="bruce_banner">Bruce Banner</option>
+                            <option value="natasha_romanoff">Natasha Romanoff</option>
+                            <option value="clint_barton">Clint Barton</option>
+                            <option value="tom_hiddleson">Tom Hiddleson</option>
+                        </select>
                     <br>
-                    <p id="date-and-time"></p>
-                    <p id="welcome"></p>
-                    <p id="mood"></p>
-                <h3>Fun with Buttons and Prompts!</h3>
-                    <p>
-                        Click on any of the buttons following to see some of the fun scripts we can write for you!
-                        They are mainly simplistic, yet still fun to do!
-                        Have a rapidly fun time!
-                    </p>
-                    <div>
-                        <button onclick="joke()" class="button">Tell me a joke!</button>
-                        <button onclick="toCelsius()" class="button">Fahrenheit to Celsius!</button>
-                        <button onclick="addition()" class="button">Addition!</button>
-                        <button onclick="noise()" class="button">Noise!</button>
-                        <button onclick="favoriteAvenger()" class="button">Favorite Avenger!</button>
-                    </div>
-                <h3>Text After Clicking Buttons:</h3>
-                    <p id="joke"></p>
-                    <p id="celsius"></p>
-                    <p id="addition"></p>
-                    <p id="noise"></p>
-                    <p id="avenger"></p>
+                </form>
+                <p id="demo"></p>
+                <br>
+                <button onclick="addSalary()">Add Salary</button>
+                <button onclick="displayResults()">Display Results</button>
+                <button onclick="displaySalaries()">Display Salaries</button>
+                <br>
+                <div id="results"></div>
+                <br>
+                <table id="results_table"></table>
         </main>
         <footer>
             <nav>
@@ -76,10 +73,10 @@
             </nav>
             <br>
             <p>Page built by RTFIndustries&copy;</p>
-            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Ffirst-scripts.html">
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Fcalculator_fcc.html">
                 <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
             </a>
-            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Ffirst-scripts.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Fcalculator_fcc.html&profile=css3svg&us">
                 <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
             </a>
         </footer>
