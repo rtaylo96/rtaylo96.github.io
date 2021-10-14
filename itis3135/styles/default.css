@@ -168,3 +168,10 @@ button{
     grid-column: -2;
     grid-row: 2 / span 4;
 }
+
+/* Project Design Page CSS */
+.tab {
+    /* from geeksforgeeks.org */
+    display: inline-block;
+    margin-left: 40px;
+}
