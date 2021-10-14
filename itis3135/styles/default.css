@@ -78,18 +78,18 @@ tbody tr:nth-child(even) td {
 /* All of the following CSS is based off w3schools.com/css/css_form.asp */
 input[type=submit]{
     background-color: darkslateblue;
-    color: lightgray;
+    color: lavender;
 }
 
 input[type=text], input[type=tel], input[type=email], input[placeholder]{
-    background-color: lightgray;
+    background-color: lavender;
     color: darkslateblue;
     font-family: 'Helvetica';
     margin: 8px 0;
 } 
 
 select{
-    background-color: lightgray;
+    background-color:lavender;
     color: darkslateblue;
 }
 
@@ -104,7 +104,7 @@ select{
 
 /* ITIS 3135 Activity 7 */
 button{
-    background-color: lightgray;
+    background-color: lavender;
     color: darkslateblue;
     border-color: lightslategray;
     text-align: center;
