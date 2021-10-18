@@ -1,12 +1,13 @@
 // function based off of w3schools.com/js/tryit.asp?filename=tryjs_prompt
-function userInformation(){
+const name = window.prompt("Please enter your first and last name: "); 
+const userMood = window.prompt("How are you doing today?");
+function userInformation(userName, mood){
     let userText, moodText;
     let company = "Rapid Tree Frog Industries";
     let today = new Date();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    document.getElementById("date-and-time").innerHTML = "Today is " + today.toDateString() + ", and the time is: " + time;
+    document.getElementById("date-and-time").innerHTML = "Today is " + today.toDateString() + ", and the time is " + time;
 
-    let userName = prompt("Please enter your first and last name: ");
     if (userName == null || userName == "")
     {
         userText = "User cancelled the prompt";
@@ -15,7 +16,6 @@ function userInformation(){
     }
     document.getElementById("welcome").innerHTML = userText;
 
-    let mood = prompt("How are you doing today?");
     if (mood == null || mood == "")
     {
         moodText = "User cancelled the prompt";

@@ -15,7 +15,7 @@ h1, h2, h3{
     font-family: 'Trebuchet MS';
     text-align: center;
     color: #4C5C68;
-    line-height: 0px;
+    line-height: 25px;
 }
 
 .contact{
@@ -31,4 +31,8 @@ a{
 a:hover{
     text-decoration: underline;
     color: #DF3B57;
+}
+
+nav{
+    text-align: center;
 }

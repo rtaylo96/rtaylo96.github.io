@@ -1,6 +1,6 @@
 body{
     font-family: 'Trebuchet MS';
-    color: darkgreen;
+    color: #4A4354;
     background-color: rosybrown;
     margin-left: 75px;
     margin-right: 75px;
@@ -13,18 +13,18 @@ header, footer{
 h1, h2, h3{
     font-family: 'Georgia';
     text-align: center;
-    line-height: 0px;
+    line-height: 25px;
 }
 
 a{
     text-decoration: none;
-    color: goldenrod;
+    color: #437070;
     font-weight: bold;
 }
 
 a:hover{
     text-decoration: underline;
-    color: gold;
+    color: #4A5D5f;
 }
 
 figure{
