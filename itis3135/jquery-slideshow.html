@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+        <title>Rachel Taylor| ITIS 3135 | Picture Slideshow</title>
+    </head>
+    <body>
+        <header>
+            <h1>Rachel Taylor &middot; ITIS 3135 &middot; Picture Slideshow</h1>
+        </header>
+        <script>
+            // the following code has been adapted from www.youtube.com/watch?v=iCBBLAR3R-60
+            $(document).ready(function() {
+                var imgs = new Array();
+                var intervalID;
+
+                $('#slideshow img').each(function() {
+                    imgs.push($(this).attr('src'));
+                });
+
+                function setImage() 
+                {
+                    var active = $('#active');
+                    var currentImageURL = active.attr('src');
+                    var activeImage = $.inArray(currentImageURL, imgs);
+                    if(activeImage == (imgs.length - 1)){
+                        activeImage = -1;
+                    }
+
+                    active.attr('src', imgs[activeImage + 1]);
+                }
+
+                $(function(){
+                    intervalID = setInterval(setImage, 1500);
+                });
+            });
+        </script>
+            <nav>
+                <a href="index.html">Home</a>
+                ||
+                <a href="introduction.html">Introduction</a>
+                ||
+                <a href="tables.html">HTML Tables</a>
+                ||
+                <a href="forms.html">HTML Forms</a>
+                ||
+                <a href="CrAppY-WeBpaGE.html">CRAPPY Webpage</a>
+                ||
+                <a href="website-evaluations.html">Website Evaluations</a>
+                <br>
+                <a href="first-scripts.html">First Scripts</a>
+                ||
+                <a href="name-the-polygon.html">Name The Polygon</a>
+                ||
+                <a href="calculator-try.html">Calculator Try</a>
+                ||
+                <a href="calculator-fcc.html">Calculator freeCodeCamp Tutorial</a>
+                ||
+                <a href="arrays.html">Arrays</a>
+                ||
+                <a href="project-rand.html">Project Design</a>
+                <br>
+                <a href="jquery-slideshow.html">Picture Slideshow</a>
+            </nav>
+        <main>
+            <h2>Picture Slideshow</h2>
+                <h3>Rapid Tree Frog Industries Employee Photos</h3>
+                <img id="active" src="images/tony-stark.jpg" alt="Tony Stark">
+                <br>
+                <div id="slideshow">
+                    <img class="image" src="images/tony-stark.jpg" alt="Tony Stark">
+                    <img class="image" src="images/steve-rodgers.jpg" alt="Steve Rodgers">
+                    <img class="image" src="images/bruce-banner.jpg" alt="Bruce Banner">
+                    <img class="image" src="images/chris-hemsworth.jpg" alt="Chris Hemsworth">
+                    <img class="image" src="images/natasha-romanoff.jpg" alt="Natasha Romanoff">
+                    <img class="image" src="images/clint-barton.jpg" alt="Clint Barton">
+                    <img class="image" src="images/tom-hiddleson.jpg" alt="Tom Hiddleson">
+                </div>
+        </main>
+        <footer>
+            <nav>
+                <a href="https://webpages.uncc.edu/rtaylo96/" target="_blank">Charlotte.edu</a>
+                 || 
+                <a href="https://github.com/rtaylo96" target="_blank">Github</a>
+                 || 
+                <a href="https://rtaylo96.github.io" target="_blank">Github.io</a>
+                 ||
+                <a href="https://rtaylo96.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a>
+                 ||
+                <a href="https://www.freecodecamp.org/rtaylo96" target="_blank">freeCodeCamp</a>
+                 ||
+                <a href="https://www.linkedin.com/in/rachel-taylor-bb896b143/" target="_blank">LinkedIn</a>
+            </nav>
+            <p>Website built by <a href="brand-rapid-tree-frog.html">RTFIndustries&copy;2021</a></p>
+            <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Fjquery-slideshow.html" style="text-decoration: none;">
+                <img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+            </a>
+            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Frtaylo96%2Fitis3135%2Fjquery-slideshow.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+                <img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+            </a>
+        </footer>
+    </body>
+</html>

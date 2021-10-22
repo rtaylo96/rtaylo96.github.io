@@ -94,3 +94,20 @@ function favoriteAvenger(){
     }
     document.getElementById("avenger").innerHTML = text;
 }
+
+
+// jquery-videos code
+
+$ (function() {
+    //$('li').css('color', 'red');
+    //$('li').addClass('alert');
+    //$('li').removeClass('alert');
+    //$('li:first').addClass('alert');
+    //$('li:last').addClass('alert');
+    //$('li:even').addClass('alert');
+    //$('li:odd').addClass('alert');
+    //$('li:nth-child(4)').addClass('alert'); (returns 4)
+    //$('li:eq(4)').addClass('alert'); (returns 5)
+    //$('li a[title=title]').addClass('alert');
+    $('li > a').addClass('alert');
+});

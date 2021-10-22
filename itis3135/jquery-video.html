@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    <head>
+        <title>Rachel Taylor| ITIS 3135 | jQuery Video Notes</title>
+        <script src="./scripts/jquery-3.6.0.min.js"></script>
+        <style type="text/css">
+            #box {
+                background: red;
+                width: 300px;
+                height: 300px; 
+                display: none;
+            }
+
+            p a {
+                color: red;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function(){
+                $('a').click(function(){
+                    //$('#box').fadeOut();
+                    // or fadeOut('fast');
+                    // or fadeOut(5000);
+                    //$('#box').slideUp();
+                    //$('#box').hide(4000);
+                    //$('#box').show(4000);
+                    //$('#box').fadeIn(4000);
+                    $('#box').slideDown(4000);
+                    $('p a').css('color', 'blue');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="box"></div>
+        <a href="#">Click Me!</a>
+        <br>
+        <p>
+            It is a <a href="#">long</a> established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+            <a href="#">Random Link</a> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
+            'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by 
+            <a href="#">accident</a>, sometimes on purpose (injected humour and the like).
+        </p>
+    </body>
+    -->
+    <!--
+    <head>
+        <title>Rachel Taylor| ITIS 3135 | jQuery Video Notes</title>
+        <script src="./scripts/jquery-3.6.0.min.js"></script>
+        <style type="text/css">
+            #box {
+                background: red;
+                width: 300px;
+                height: 300px;
+                position: relative;
+            }
+        </style>
+        <script type="text/javascript">
+            $(function(){
+                $('#box').click(function(){
+                    //$('#box').animate is the same as...
+                    $(this).animate({
+                        "left" : "300px"
+                        //"width" : "50px"
+                    }, 4000);
+                    $(this).animate({ "width" : "50px" }, 4000);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="box"></div>
+    </body>
+    -->
+    <head>
+        <title>Rachel Taylor| ITIS 3135 | jQuery Video Notes</title>
+        <script src="./scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <script src="./scripts/default.js" type="text/javascript"></script>
+        <link href="styles/default.css" rel="stylesheet" type="text/css">
+    </head>
+    <body style="background: none;">
+        <a href="#">Anchor Tag</a>
+        <ul>
+            <li>list 1</li>
+            <li>list 2</li>
+            <li><a href="#" title="not title">list 3</a></li>
+            <li>list 4</li>
+            <li><a href="#" title="title">list 5</a></li>
+            <li>list 6</li>
+            <li>list 7</li>
+        </ul>
+    </body>
+</html>
