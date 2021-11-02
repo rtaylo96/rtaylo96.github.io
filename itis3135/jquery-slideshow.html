@@ -3,76 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="scripts/jquery-slideshow.js"></script>
         <title>Rachel Taylor| ITIS 3135 | Picture Slideshow</title>
     </head>
     <body>
         <header>
             <h1>Rachel Taylor &middot; ITIS 3135 &middot; Picture Slideshow</h1>
         </header>
-        <script>
-            // the following code has been adapted from www.youtube.com/watch?v=iCBBLAR3R-60
-            $(document).ready(function() {
-                var imgs = new Array();
-                var intervalID;
-
-                $('#slideshow img').each(function() {
-                    imgs.push($(this).attr('src'));
-                });
-
-                function setImage() 
-                {
-                    var active = $('#active');
-                    var currentImageURL = active.attr('src');
-                    var activeImage = $.inArray(currentImageURL, imgs);
-                    if(activeImage == (imgs.length - 1)){
-                        activeImage = -1;
-                    }
-
-                    active.attr('src', imgs[activeImage + 1]);
-                }
-
-                $(function(){
-                    intervalID = setInterval(setImage, 1500);
-                });
-            });
-        </script>
-            <nav>
-                <a href="index.html">Home</a>
-                ||
-                <a href="introduction.html">Introduction</a>
-                ||
-                <a href="tables.html">HTML Tables</a>
-                ||
-                <a href="forms.html">HTML Forms</a>
-                ||
-                <a href="CrAppY-WeBpaGE.html">CRAPPY Webpage</a>
-                ||
-                <a href="website-evaluations.html">Website Evaluations</a>
-                <br>
-                <a href="first-scripts.html">First Scripts</a>
-                ||
-                <a href="name-the-polygon.html">Name The Polygon</a>
-                ||
-                <a href="calculator-try.html">Calculator Try</a>
-                ||
-                <a href="calculator-fcc.html">Calculator freeCodeCamp Tutorial</a>
-                ||
-                <a href="arrays.html">Arrays</a>
-                ||
-                <a href="project-rand.html">Project Design</a>
-                <br>
-                <a href="jquery-slideshow.html">Picture Slideshow</a>
-                ||
-                <a href="Practice.html">Practice Activity</a>
-                ||
-                <a href="exercises/Midterm-3/Midterm/Midterm.html">Midterm Activity</a>
-                ||
-                <a href="contract.html">Contract</a>
-            </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="tables.html">HTML Tables</a>
+            ||
+            <a href="forms.html">HTML Forms</a>
+            ||
+            <a href="CrAppY-WeBpaGE.html">CRAPPY Webpage</a>
+            ||
+            <a href="website-evaluations.html">Website Evaluations</a>
+            <br>
+            <a href="first-scripts.html">First Scripts</a>
+            ||
+            <a href="name-the-polygon.html">Name The Polygon</a>
+            ||
+            <a href="calculator-try.html">Calculator Try</a>
+            ||
+            <a href="calculator-fcc.html">Calculator freeCodeCamp Tutorial</a>
+            ||
+            <a href="arrays.html">Arrays</a>
+            ||
+            <a href="project-rand.html">Project Design</a>
+            <br>
+            <a href="jquery-slideshow.html">Picture Slideshow</a>
+            ||
+            <a href="Practice.html">Practice Activity</a>
+            ||
+            <a href="exercises/Midterm-3/Midterm/Midterm.html">Midterm Activity</a>
+            ||
+            <a href="exercises/taylor-activity10.html">Image Swap Application</a>
+            ||
+            <a href="contract.html">Contract</a>
+        </nav>
         <main>
             <h2>Picture Slideshow</h2>
                 <h3>Rapid Tree Frog Industries Employee Photos</h3>
