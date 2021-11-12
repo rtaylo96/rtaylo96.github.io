@@ -39,6 +39,13 @@ nav{
     text-align: center;
 }
 
+/* reference https://www.w3schools.com/howto/howto_css_image_responsive.asp */
+.fit{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
 .align-right{
     text-align: right;
 }
