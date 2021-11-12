@@ -1,4 +1,4 @@
-/*https://coolors.co/d8a47f-7b9e87-46494c-df3b57-4c5c68*/
+/*https://coolors.co/d8a47f-fb5581-46494c-df3b57-4c5c68*/
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #46494C;
@@ -24,13 +24,13 @@ h1, h2, h3{
 
 a{
     text-decoration: none;
-    color: #7B9E87;
+    color: #DF3B57;
     font-weight: bold;
 }
 
 a:hover{
     text-decoration: underline;
-    color: #DF3B57;
+    color: #fb5581;
 }
 
 nav{
