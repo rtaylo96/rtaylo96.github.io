@@ -20,15 +20,13 @@ $(document).ready(function() {
             //          xmlDoc.find("title").text() + "<br>" +
             //            xmlDoc.find("bio").text() + "<br>");
             //});
-            
-            // JSON Murach Page 421
             $.each(data, function(){
                 $.each(this, function(key, value){
                     $('#team').append(
-                        '<h3>' + value.name + '</h3>' +
-                        value.title + '<br>' +
-                        value.bio + '<br>' + 
-                        '<br>'
+                        "<h3>" + value.name + "</h3>" +
+                        value.title + "<br>" +
+                        value.bio + "<br>" + 
+                        "<br>"
                     );
                 });
             });
