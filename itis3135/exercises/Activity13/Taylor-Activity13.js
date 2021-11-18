@@ -21,13 +21,16 @@ $(document).ready(function() {
             //            xmlDoc.find("bio").text() + "<br>");
             //});
             
-            // JSON
-            $(data).find("management").children().each(function(){
-                var jsonDoc = $(this);
-                $("#team").append
-                ("<h3>" + jsonDoc.find("name").text() + "</h3>" +
-                        jsonDoc.find("title").text() + "<br>" +
-                        jsonDoc.find("bio").text() + "<br>");
+            // JSON Murach Page 421
+            $.each(data, function(){
+                $.each(this, function(key, value){
+                    $('#team').append(
+                        '<h3' + value.name + '</h3>' +
+                        value.title + '<br>' +
+                        value.bio + '<br>' + 
+                        '<br>'
+                    );
+                });
             });
         }
     });
