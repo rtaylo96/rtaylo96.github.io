@@ -15,7 +15,7 @@ $(document).ready(function(){
             $.each(data, function(){
                 $.each(this, function(key, value){
                     $("#faculty").append(
-                        "<img>" + value.image + "</img>"
+                        "<img src='./" + value.image + "></img>"
                         + "<h2>" + value.full_name + "</h2>"
                         + "<h3>" + value.department + "</h3>"
                         + "<p>" + value.bio + "</p>"
