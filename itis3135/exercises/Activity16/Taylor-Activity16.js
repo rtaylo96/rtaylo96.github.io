@@ -7,5 +7,6 @@ $(document).ready(function(){
             writeHTML += "<a href= \"" + item.media.m + "\"data-lightbox= \"buildingImages\" data-title=" 
             + item.title + "><img src=" + item.media.m + "></a>";
         });
+    $("#new_building").html(writeHTML);
     });
 });
