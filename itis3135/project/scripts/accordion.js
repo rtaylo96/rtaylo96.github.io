@@ -1,5 +1,5 @@
-$document.ready(function(){
-    $("#accordion").accordion({
+$(document).ready(function(){
+    $("#service-projects").accordion({
         active: false,
         collapsible: true
     });
