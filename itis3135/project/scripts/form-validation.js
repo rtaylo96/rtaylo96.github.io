@@ -1,21 +1,25 @@
 $(document).ready(function(){
-    $('form[id="interest-form"]').validate({
+    $('#interest-form').validate({
         rules: {
-            name: 'required',
-            school: 'required',
+            name: "required",
+            school: "required",
             email:{
                 required: true,
-                email: true,
-            }
+                email: true
+            },
         },
         messages: {
-            name: 'This field is required',
-            school: 'Please enter UNCC or CPCC',
-            email: 'Enter a valid email'
+            name: "This field is required",
+            school: "Please enter UNCC or CPCC",
+            email: "Enter a valid email"
+        },
+        errorPlacement: function (error, element){
+            error.appendTo('#err');
         },
         submitHandler: function(form){
             form.submit();
         }
     });
-    alert('Thank you for your interest!');
 });
+
+// for some reason the error messages are not showing...

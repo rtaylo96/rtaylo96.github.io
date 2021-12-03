@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
-        <script src="scripts/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
         <script src="scripts/form-validation.js"></script>
         <title>Rotaract Club | District 7680 | Contact Us</title>
     </head>
@@ -26,18 +28,21 @@
             <h2>Contact Us</h2>
             <h3>Want to get involved?</h3>
             <p>Fill out your information below and we will add you to the registry.</p>
-            <form id="interest-form">
+            <form action="#" id="interest-form" name="interest-form">
                 <div>
                     <label for="name"><span>Name:</span></label><br>
-                    <input type="text" id="name" name="name"><br>
+                    <input type="text" id="name" name="name">
+                    <div id="err"></div><br>
                 </div>
                 <div>
                     <label for="school"><span>School:</span> (Interest in UNCC or CPCC)</label><br>
-                    <input type="text" id="school" name="school"><br>
+                    <input type="text" id="school" name="school">
+                    <div id="err"></div><br>
                 </div>
                 <div>
                     <label for="email"><span>Email:</span></label><br>
-                    <input type="email" id="email" name="email"><br>
+                    <input type="email" id="email" name="email">
+                    <div id="err"></div><br>
                 </div>
                 <div>
                     <input type="submit" value="Submit">

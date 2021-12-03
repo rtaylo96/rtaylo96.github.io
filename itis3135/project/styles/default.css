@@ -87,7 +87,7 @@ span{
     font-size: large;
 }
 
-label.error {
-    display: inline;
-    color: red;
+.err{
+    color: #ff0000;
+    margin-left: 5px;
 }
