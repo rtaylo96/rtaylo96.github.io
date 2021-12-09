@@ -15,8 +15,8 @@ $(document).ready(function(){
             $.each(data, function(){
                 $.each(this, function(key, value){
                     $("#district").append(
-                        "<p>" + "<strong>" + value.title + "</strong>" +
-                        value.full_name + "<a href=\"mailto:" + value.email + "\">" +
+                        "<p>" + "<strong>" + value.title + "</strong> " +
+                        value.full_name + " <a href=\"mailto:" + value.email + "\"> " +
                         value.email + "</a>" + "</p>"
                     )
                 })
