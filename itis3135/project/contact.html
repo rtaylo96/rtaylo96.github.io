@@ -2,11 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
         <link href="styles/default.css" rel="stylesheet" type="text/css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
         <script src="scripts/form-validation.js"></script>
+        <script src="scripts/ajax-district.js"></script>
         <title>Rotaract Club | District 7680 | Contact Us</title>
     </head>
     <body>
@@ -28,32 +27,27 @@
             <h2>Contact Us</h2>
             <h3>Want to get involved?</h3>
             <p>Fill out your information below and we will add you to the registry.</p>
-            <form action="#" id="interest-form" name="interest-form">
-                <div>
-                    <label for="name"><span>Name:</span></label><br>
-                    <input type="text" id="name" name="name">
-                    <div id="err"></div><br>
-                </div>
-                <div>
-                    <label for="school"><span>School:</span> (Interest in UNCC or CPCC)</label><br>
-                    <input type="text" id="school" name="school">
-                    <div id="err"></div><br>
-                </div>
-                <div>
-                    <label for="email"><span>Email:</span></label><br>
-                    <input type="email" id="email" name="email">
-                    <div id="err"></div><br>
-                </div>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
+            <form action="#" method="get" id="interest-form" name="interest-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+                <span>*</span><br>
+                <label for="school">School: Interest in UNCC or CPCC</label><br>
+                <input type="text" id="school" name="school">
+                <span>*</span><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email">
+                <span>*</span><br><br>
+                <input type="submit" id="submit" value="Submit"><br>
             </form>
             <h3>Get in Contact with the District</h3>
-            <ul>
-                <li><span>District 7680 Rotaract Leadership: </span><a href="mailto:rotaract@rotary7680.org">rotaract@rotary7680.org</a></li>
-                <li>District Rotaract Chair <span>Hannah Kay Herdlinger: </span><a href="mailto:hannahkay@threadtalk.com">hannahkay@threadtalk.com</a></li>
-                <li>District Rotaract Representative <span>Bhavisha Naik: </span><a href="mailto:bnaik@uncc.edu">bnaik@uncc.edu</a></li>
-            </ul>
+            <!--
+                <ul>
+                <li><strong>District 7680 Rotaract Leadership: </strong><a href="mailto:rotaract@rotary7680.org">rotaract@rotary7680.org</a></li>
+                <li>District Rotaract Chair <strong>Hannah Kay Herdlinger: </strong><a href="mailto:hannahkay@threadtalk.com">hannahkay@threadtalk.com</a></li>
+                <li>District Rotaract Representative <strong>Bhavisha Naik: </strong><a href="mailto:bnaik@uncc.edu">bnaik@uncc.edu</a></li>
+                </ul>
+            -->
+            <div id="district"></div>
         </main>
         <footer>
             <figure class="align-right">

@@ -4,5 +4,3 @@ $(document).ready(function(){
         collapsible: true
     });
 });
-
-// the accordion isn't working either... I'm not sure why this is...
